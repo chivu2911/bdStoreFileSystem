@@ -1,0 +1,3 @@
+{"transaction_id":"d4016172-fe70-469c-95c9-d1b3fa10efd3","user_id":1,"date":"2019-07-02","description":"Prueba 1","amount":123.0}
+{"transaction_id":"d869853d-1125-43ad-be14-01d29c9ef5bd","user_id":2,"date":"2019-07-02","description":"Prueba 2","amount":123.0}
+{"transaction_id":"4ea9c0ed-1279-4467-9e4b-9af239109b07","user_id":2,"date":"2019-07-02","description":"Prueba 3","amount":100.0}
