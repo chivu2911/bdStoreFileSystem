@@ -1,0 +1,9 @@
+logging:
+  level:
+    org.apache.catalina.core: ERROR
+    org.springframework: ERROR
+    com.zaxxer.hikari: warn
+
+    com.example: INFO
+  pattern:
+    console: "[ %m ] %n"
