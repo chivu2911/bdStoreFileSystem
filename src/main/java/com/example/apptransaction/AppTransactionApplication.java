@@ -4,16 +4,22 @@ import com.example.apptransaction.dao.IFileDao;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.Banner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 
 @SpringBootApplication
 public class AppTransactionApplication implements CommandLineRunner {
 
     private static Logger LOG = LoggerFactory.getLogger(AppTransactionApplication.class);
+
     public static void main(String[] args) {
-        SpringApplication.run(AppTransactionApplication.class, args);
+        SpringApplication app = new SpringApplication(AppTransactionApplication.class);
+        app.setBannerMode(Banner.Mode.OFF);
+        app.run(args);
+
     }
 
     @Autowired
@@ -21,7 +27,6 @@ public class AppTransactionApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        LOG.info("EXECUTING : command line runner", args);
 
         if(args.length > 1){
             switch (args[1]){
